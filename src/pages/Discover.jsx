@@ -28,8 +28,24 @@ const Discover = () => (
         </div>
         <form action="#" className="mt-4">
           <input type="text" className="h-12 rounded-4xl text-dark placeholder:text-gray-500 border border-gray-200 w-full p-4 focus:border-[#0ebeb2] focus:outline-none" placeholder="Ask anything, the more you share the better I can help…" />
-          <div className="flex justify-end">
-            <button class="py-2 px-10 rounded-4xl flex cursor-pointer items-center gap-1 bg-gray-200 mt-2"><p class="text-base text-dark">Ask</p><img class="invert grayscale w-4" alt="Ask Icon" src="/ask.svg" /></button>
+          <div className="flex mt-4 items-stretch gap-3 justify-between">
+              <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 py-2 px-4 border border-gray-200 rounded-3xl cursor-pointer">
+                      <img src="/plus.svg" alt="chat" />
+                      <p className="text-xs text-dark">Modify Trip</p>
+                  </div>
+                    <div className="flex items-center gap-2 py-2 px-4 border border-gray-200 rounded-3xl cursor-pointer">
+                      <img src="/plus.svg" alt="chat" />
+                      <p className="text-xs text-dark">Make It cheaper</p>
+                  </div>
+                    <div className="flex items-center gap-2 py-2 px-4 border border-gray-200 rounded-3xl cursor-pointer">
+                      <img src="/plus.svg" alt="chat" />
+                      <p className="text-xs text-dark">Find me flights</p>
+                  </div>
+              </div>
+              <div className="flex justify-end">
+                  <button class="py-2 px-10 rounded-4xl flex cursor-pointer items-center gap-1 bg-gray-200"><p class="text-xs text-dark">Ask</p><img class="invert grayscale w-4" alt="Ask Icon" src="/ask.svg" /></button>
+              </div>
           </div>
         </form>
       </div>
